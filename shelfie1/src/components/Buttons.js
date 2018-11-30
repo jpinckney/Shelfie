@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 
 class Buttons extends Component {
+
+// onClickHandlerCancel() {
+
+  // }
+  // onClickHandlerAdd() {
+
+  // }
+
+
   render() {
     return (
       <div>
-        <button classname='button'>Add to inventory</button>
-        <button classname='button'>Cancel</button>
+        <button className='button'>Add to inventory</button>
+        <button className='button'>Cancel</button>
       </div>
     );
   }

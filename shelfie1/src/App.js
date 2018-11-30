@@ -2,38 +2,32 @@ import React, { Component } from 'react';
 import './App.css';
 import Input from './components/Input'
 import Buttons from './components/Buttons'
+import Logo from './components/Logo'
+import Dashboard from './components/Dashboard'
+import Form from './components/Form'
+import Product from './components/Product'
+import Header from './components/Header'
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     image_url: '',
-  //     name: '',
-  //     price: 
-  //   }
-  // }
-
-  // updateImage_Url() {
-
-  // }
-  // updateName() {
-
-  // }
-  // updatePrice() {
-
-  // }
-
+  
   render() {
     return (
       <div>
         <div className='inputContainer'>
-          <Input />
+          <Logo />
+          {/* <Input /> */}
           <Buttons />
         </div>
+        <div>
+          <Dashboard />
+          <Product />
+        </div>
+        <Form />
+        <Header />
       </div>
     );
   }
 }
-
+/** need to make sure state is changing with input and get the buttons to have an onclick */
 export default App;

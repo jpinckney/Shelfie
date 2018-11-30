@@ -1,12 +1,17 @@
 .inputContainer {
   background-color: #3AD886;
+  width: 50%;
+  
+
 }
 
 .buttonContainer {
-  background-color: #ED6B5A;
+
 }
 .button {
-  padding: 3px 8px;
-  margin: 3px;
-  opacity: 0.2;
+  padding: 8px 8px;
+  background-color: #ED6B5A;
+  margin: 3px 3px;
+  border-radius: 5px;
+  border: solid 1px;
 }
