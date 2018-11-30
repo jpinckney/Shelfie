@@ -8,9 +8,9 @@ class Input extends Component {
       name: '',
       price: []
     }
-    // this.updateName = this.updateName.bind(this);
-    // this.updatePrice = this.updatePrice.bind(this);
-    // this.updateImage_Url = this.updateImage_Url.bind(this);
+    // this.handleUpdateImage_Url = this.handleUpdateImage_Url.bind(this);
+    this.handleUpdateName = this.handleUpdateName.bind(this);
+    this.handleUpdatePrice = this.handleUpdatePrice.bind(this);
   }
 
 
@@ -19,21 +19,19 @@ class Input extends Component {
   //     image_url: event.target.value
   //   });
   // }
-  handleUpdateName(prodcutName) {
-    this.setState({name: prodcutName})}
+  handleUpdateName(productName) {
+    this.setState({ name: productName })
+  }
 
-  // updatePrice(event) {
-  //   this.setState({
-  //     price: event.target.value
-  //   })
-  // }
-
+  handleUpdatePrice(productPrice) {
+    this.setState({ price: productPrice })
+  }
   render() {
     return (
       <div>
-        <h5>Image url: <input value={ this.props.updateImage_Url } onChange={ event => this.props.updateImage_Url(event) }></input></h5>
-        <h5>Name: <input onChange={ event => this.handleUpdateName(event.target.value) } type='text'> </input></h5>
-        <h5>Price: <input value={ this.props.updatePrice } onChange={ event => this.props.updatePrice(event) }></input></h5>
+        {/* <h5>Image url: <input value={ this.props.updateImage_Url } onChange={ event => this.props.updateImage_Url(event) }></input></h5> */}
+        <h5>Name: <input onChange={ event => this.handleUpdateName(event.target.value) } type='text' /></h5>
+        <h5>Price: <input onChange={ event => this.handleUpdatePrice(event.target.value) } type='text'></input></h5>
       </div>
     );
   }

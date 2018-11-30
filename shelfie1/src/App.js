@@ -16,7 +16,7 @@ class App extends Component {
       <div>
         <div className='inputContainer'>
           <Logo />
-          {/* <Input /> */}
+          <Input />
           <Buttons />
         </div>
         <div>
